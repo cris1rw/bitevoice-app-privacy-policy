@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Service — BiteVoice AI</title>
-  <meta name="description" content="Terms of Service for BiteVoice AI" />
+  <title>Terms of Service / Termini di Servizio — BiteVoice AI</title>
+  <meta name="description" content="Bilingual Terms of Service for BiteVoice AI" />
   <style>
     :root {
       --text: #111827;
@@ -13,59 +13,100 @@
       --bg: #ffffff;
       --bg-soft: #f9fafb;
       --link: #2563eb;
+      --accent: #dbeafe;
       --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: var(--sans);
       color: var(--text);
       background: var(--bg);
-      line-height: 1.6;
+      line-height: 1.65;
     }
     main {
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 32px 18px 64px;
+      padding: 32px 18px 72px;
     }
     header {
-      padding-bottom: 16px;
+      padding-bottom: 18px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 24px;
     }
     h1 {
       margin: 0 0 8px;
-      font-size: 28px;
+      font-size: 30px;
       line-height: 1.2;
     }
-    .meta {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
     h2 {
-      margin-top: 28px;
-      margin-bottom: 10px;
-      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 1.3;
     }
     h3 {
-      margin-top: 18px;
+      margin-top: 26px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+    h4 {
+      margin-top: 16px;
       margin-bottom: 8px;
       font-size: 16px;
+      line-height: 1.4;
     }
     p { margin: 10px 0; }
     ul { margin: 8px 0 12px 22px; }
     li { margin: 6px 0; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .note {
+    .meta {
+      margin: 2px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .note, .lang-note {
       background: var(--bg-soft);
       border: 1px solid var(--border);
-      padding: 12px 14px;
-      border-radius: 10px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    .lang-note p {
+      margin: 8px 0;
       color: var(--muted);
-      margin: 14px 0;
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 6px;
+    }
+    .toc a {
+      display: inline-block;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg-soft);
+      font-size: 14px;
+    }
+    .language-block {
+      margin-top: 34px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    .language-label {
+      display: inline-block;
+      margin: 0 0 8px;
+      padding: 6px 10px;
+      background: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
     }
     blockquote {
       margin: 14px 0;
@@ -78,8 +119,23 @@
       font-family: var(--mono);
       font-size: 0.95em;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+    }
+    th {
+      background: var(--bg-soft);
+    }
     footer {
-      margin-top: 36px;
+      margin-top: 42px;
       padding-top: 16px;
       border-top: 1px solid var(--border);
       color: var(--muted);
@@ -90,193 +146,437 @@
 <body>
   <main>
     <header>
-      <h1>Terms of Service — BiteVoice AI</h1>
-      <p class="meta"><strong>Version:</strong> Draft 1.1</p>
-      <p class="meta"><strong>Last Updated:</strong> February 2026</p>
+      <h1>Terms of Service / Termini di Servizio — BiteVoice AI</h1>
+      <p class="meta"><strong>Version / Versione:</strong> 2026-03-26.1</p>
+      <p class="meta"><strong>Effective Date / Data di efficacia:</strong> March 26, 2026 / 26 marzo 2026</p>
+      <p class="meta"><strong>Last Updated / Ultimo aggiornamento:</strong> March 26, 2026 / 26 marzo 2026</p>
       <p class="meta"><strong>Status:</strong> Draft — Requires Legal Review before publication</p>
     </header>
 
-    <section>
+    <section class="lang-note">
+      <p><strong>Language Notice.</strong> This document is provided in English and Italian on a single page for convenience. The two language versions are intended to reflect the same legal terms. To the maximum extent permitted by applicable law, the English version prevails in the event of conflict or inconsistency. If mandatory consumer protection law or other mandatory local law requires another language to prevail, that mandatory law will apply.</p>
+      <p><strong>Avviso sulla Lingua.</strong> Questo documento è fornito in inglese e italiano in un'unica pagina per comodità. Le due versioni linguistiche intendono riflettere gli stessi termini legali. Nella misura massima consentita dalla legge applicabile, in caso di conflitto o incoerenza prevale la versione inglese. Qualora norme imperative di tutela del consumatore o altre norme locali imperative richiedano la prevalenza di un'altra lingua, si applicheranno tali norme imperative.</p>
+    </section>
+
+    <nav class="toc" aria-label="Language navigation">
+      <a href="#english-version">English Version</a>
+      <a href="#versione-italiana">Versione Italiana</a>
+    </nav>
+
+    <section id="english-version" class="language-block" lang="en">
+      <div class="language-label">English</div>
+
       <h2>1. Acceptance of Terms</h2>
-      <p>By downloading, installing, creating an account, or using the BiteVoice AI mobile application ("App"), you agree to be bound by these Terms of Service ("Terms").</p>
+      <p>By downloading, installing, creating an account for, or using the BiteVoice AI mobile application and related services (the "App" or the "Service"), you agree to be bound by these Terms of Service ("Terms").</p>
       <p>If you do not agree to these Terms, you must not use the App.</p>
       <p>You confirm that you are at least:</p>
       <ul>
         <li>16 years old in the European Union</li>
         <li>13 years old in the United States</li>
-        <li>Or the minimum age required under applicable law</li>
+        <li>Or the minimum age required under applicable law in your jurisdiction</li>
       </ul>
-    </section>
 
-    <section>
-      <h2>2. Description of Service</h2>
-      <p>BiteVoice AI is a nutrition and lifestyle tracking application that allows users to:</p>
+      <h2>2. Description of the Service</h2>
+      <p>BiteVoice AI is a personal-use nutrition and lifestyle tracking application.</p>
+      <p>Features may include:</p>
       <ul>
-        <li>Log meals via voice or text input</li>
-        <li>Track estimated nutrients and macronutrients</li>
-        <li>View progress and set personal goals</li>
-        <li>Scan barcodes for product lookup (where available)</li>
+        <li>Account access through email sign-in or supported third-party sign-in providers</li>
+        <li>Meal logging through voice or text input</li>
+        <li>AI-assisted meal parsing, food extraction, and nutrient estimation</li>
+        <li>Barcode lookup through internal and third-party food databases</li>
+        <li>Goal setting, progress tracking, calorie and macro targets, charts, and summaries</li>
+        <li>Weight tracking, water tracking, and reminders</li>
+        <li>Restaurant menu photo analysis and dish ranking against your goals</li>
       </ul>
-      <p>The App uses artificial intelligence and external food databases to estimate nutritional values.</p>
-      <p>The Service is provided for <strong>informational and lifestyle purposes only</strong>.</p>
-    </section>
+      <p>The Service uses automation, artificial intelligence, and third-party data sources to generate estimates and suggestions.</p>
+      <p>Features, providers, models, data sources, limits, and availability may vary by device, platform, geography, account status, experimental rollout, or technical conditions. We may impose usage caps, rate limits, weekly limits, or other restrictions at any time.</p>
+      <p>The Service is provided for informational and lifestyle purposes only.</p>
 
-    <section>
-      <h2>3. Account and Registration</h2>
+      <h2>3. Account, Permissions, and Submitted Content</h2>
 
-      <h3>3.1 Account Creation</h3>
+      <h3>3.1 Account Creation and Responsibility</h3>
+      <p>To use the App, you may need to create an account.</p>
+      <p>You agree that:</p>
       <ul>
-        <li>You must create an account to use the App</li>
-        <li>You must meet the minimum age requirements</li>
-        <li>You are responsible for maintaining the confidentiality of your login credentials</li>
+        <li>Information you provide will be accurate and lawful</li>
+        <li>You will keep your credentials and device access reasonably secure</li>
+        <li>You are responsible for activity that occurs under your account</li>
+        <li>You will update information that becomes inaccurate or outdated</li>
       </ul>
-      <p>You are responsible for all activity occurring under your account.</p>
 
-      <h3>3.2 Account Accuracy</h3>
+      <h3>3.2 Device Permissions</h3>
+      <p>Depending on the features you choose to use, you may be asked to grant device permissions such as:</p>
       <ul>
-        <li>You must provide accurate and truthful information</li>
-        <li>You must update your information if it changes</li>
+        <li>Microphone or speech recognition</li>
+        <li>Camera or photo library</li>
+        <li>Notifications</li>
       </ul>
-    </section>
+      <p>If you deny or revoke a permission, some features may not work as intended.</p>
 
-    <section>
+      <h3>3.3 User Content and Submitted Materials</h3>
+      <p>You are solely responsible for any text, voice content, transcriptions, images, barcodes, profile information, goal data, or other materials you submit through the App.</p>
+      <p>You represent and warrant that:</p>
+      <ul>
+        <li>You have the right to submit that content</li>
+        <li>Your content does not violate applicable law or third-party rights</li>
+        <li>You will not submit unlawful, infringing, deceptive, abusive, harmful, or misleading content</li>
+      </ul>
+      <p>You retain ownership of content you submit. However, you grant us a limited, non-exclusive, revocable, worldwide license to host, store, transmit, reproduce, transform, analyze, and otherwise process that content solely as needed to operate, secure, debug, improve, and provide the Service.</p>
+
+      <h3>3.4 Legal Acceptance Records and Marketing Preferences</h3>
+      <p>To operate the Service and maintain compliance records, we may record:</p>
+      <ul>
+        <li>The version of the Terms and Privacy Policy you accepted</li>
+        <li>The date and time of acceptance</li>
+        <li>The source of the acceptance flow, such as signup or compliance review</li>
+        <li>Marketing opt-in status and later marketing preference updates</li>
+      </ul>
+      <p>You may change marketing preferences where that option is available in the App or by contacting us.</p>
+
       <h2>4. Acceptable Use</h2>
 
       <h3>4.1 Permitted Use</h3>
-      <p>You may use the App solely for personal, non-commercial nutrition tracking.</p>
+      <p>You may use the App solely for personal, non-commercial nutrition and lifestyle tracking.</p>
 
       <h3>4.2 Prohibited Use</h3>
       <p>You may not:</p>
       <ul>
         <li>Use the App for unlawful purposes</li>
-        <li>Attempt to gain unauthorized access to systems or other accounts</li>
-        <li>Reverse engineer, decompile, or disassemble the App</li>
-        <li>Transmit malware or harmful code</li>
-        <li>Copy, resell, redistribute, or exploit the App or its data without permission</li>
+        <li>Attempt to gain unauthorized access to systems, infrastructure, or other accounts</li>
+        <li>Reverse engineer, decompile, or disassemble the App except where mandatory law permits it</li>
+        <li>Scrape, spider, benchmark, or extract App data by automated means without permission</li>
+        <li>Interfere with usage limits, rate limits, quotas, access controls, or security protections</li>
+        <li>Submit malware, harmful code, or abusive traffic</li>
+        <li>Submit content you do not have the right to use, including menu photos, product images, or third-party personal data</li>
+        <li>Use the App to process or store illegal, infringing, harassing, hateful, deceptive, or abusive content</li>
+        <li>Use the App for medical, emergency, regulatory, insurance, legal, or other high-stakes decision-making</li>
+        <li>Copy, resell, redistribute, sublicense, or exploit the App or its outputs beyond personal use without permission</li>
       </ul>
-    </section>
 
-    <section>
       <h2>5. Intellectual Property</h2>
-      <p>All rights, title, and interest in the App, including software, branding, content, and databases, remain the exclusive property of the Service provider.</p>
-      <p>You do not acquire ownership rights by using the App.</p>
-    </section>
+      <p>All rights, title, and interest in the App, including software, models, prompts, branding, design, databases, and other Service materials, remain the exclusive property of the Service provider or its licensors.</p>
+      <p>Your use of the App does not give you ownership rights in the App or the Service.</p>
 
-    <section>
-      <h2>6. Disclaimers</h2>
+      <h2>6. Important Disclaimers</h2>
 
-      <h3>6.1 No Medical Advice</h3>
-      <ul>
-        <li>BiteVoice AI is not a medical device</li>
-        <li>We do not provide medical, nutritional, or healthcare advice</li>
-        <li>We do not diagnose, prevent, or treat diseases</li>
-        <li>Nutrient data is provided for informational purposes only</li>
-      </ul>
-      <p>You must consult qualified healthcare professionals for medical or dietary decisions.</p>
+      <h3>6.1 No Medical, Nutritional, or Health Advice</h3>
+      <p>BiteVoice AI is not a medical device and does not provide medical, nutritional, diagnostic, healthcare, or treatment advice.</p>
+      <p>We do not diagnose, prevent, monitor, or treat diseases. Outputs, goal calculations, menu rankings, reminders, and nutritional estimates are provided for informational and lifestyle purposes only.</p>
+      <p>You must consult qualified professionals for medical, dietary, or health-related decisions.</p>
 
-      <h3>6.2 Accuracy Disclaimer</h3>
+      <h3>6.2 AI, Barcode, Menu, and Database Accuracy</h3>
       <p>The App relies on:</p>
       <ul>
-        <li>User-provided input</li>
-        <li>Automated AI parsing</li>
-        <li>Third-party nutritional databases</li>
+        <li>User-provided inputs</li>
+        <li>Voice transcription and speech recognition</li>
+        <li>Automated AI parsing and analysis</li>
+        <li>Uploaded images and image quality</li>
+        <li>Internal and third-party nutritional databases</li>
+        <li>Barcode product data and restaurant menu information</li>
       </ul>
-      <p>We do not guarantee the accuracy, completeness, or reliability of any nutritional calculations or data.</p>
-      <p>You are solely responsible for your dietary and health decisions.</p>
+      <p>We do not guarantee the accuracy, completeness, reliability, suitability, legality, availability, or timeliness of any output, estimate, ranking, reminder, nutritional calculation, transcription, barcode result, menu analysis, or other content generated or displayed by the App.</p>
+      <p>You are solely responsible for verifying outputs and for your dietary, shopping, restaurant, training, health, and lifestyle decisions.</p>
 
-      <h3>6.3 Service Availability</h3>
-      <p>We strive to maintain availability but do not guarantee uninterrupted access.</p>
-      <p>We may modify, suspend, or discontinue the App at any time without prior notice.</p>
+      <h3>6.3 Third-Party Services</h3>
+      <p>The App may depend on third-party providers, including authentication providers, analytics tools, error monitoring tools, AI providers, food databases, hosting providers, operating systems, and app stores.</p>
+      <p>We do not control and do not guarantee the acts, omissions, content, policies, security, or availability of third-party services.</p>
 
-      <h3>6.4 “As Is” and “As Available”</h3>
-      <p>The App is provided on an <strong>“as is” and “as available”</strong> basis without warranties of any kind, whether express or implied, including but not limited to warranties of accuracy, fitness for a particular purpose, or non-infringement.</p>
-    </section>
+      <h3>6.4 Availability, Changes, and Limits</h3>
+      <p>We do not guarantee uninterrupted, secure, timely, or error-free access to the App.</p>
+      <p>We may add, change, limit, suspend, disable, rate-limit, gate, or discontinue any feature, provider, model, data source, output format, or part of the Service at any time, with or without notice.</p>
 
-    <section>
+      <h3>6.5 No Warranties</h3>
+      <p>To the maximum extent permitted by applicable law, the App and the Service are provided on an <strong>"as is" and "as available"</strong> basis, without warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, accuracy, availability, or non-infringement.</p>
+
       <h2>7. Limitation of Liability</h2>
-      <p>To the maximum extent permitted by applicable law:</p>
+      <p>To the maximum extent permitted by applicable law, and except where liability cannot be excluded or limited under mandatory law, including for fraud, fraudulent misrepresentation, willful misconduct, gross negligence, death or personal injury caused by our act or omission where such exclusion is prohibited, or violation of non-waivable consumer rights:</p>
       <ul>
-        <li>We shall not be liable for any indirect, incidental, consequential, special, punitive, or exemplary damages.</li>
-        <li>We shall not be liable for any health outcomes, dietary consequences, or decisions made based on information provided by the App.</li>
-        <li>We shall not be liable for loss of data, loss of profits, or service interruptions.</li>
+        <li>The App and all outputs, estimates, analyses, calculations, reminders, and informational content are provided at your own risk</li>
+        <li>We are not liable for indirect, incidental, consequential, special, punitive, or exemplary damages</li>
+        <li>We are not liable for health outcomes, dietary consequences, food choices, menu choices, training choices, or other decisions made or not made based on the App or its outputs</li>
+        <li>We are not liable for inaccuracies, omissions, or variability resulting from user input, transcription, image quality, barcode scans, AI-generated outputs, third-party food databases, menu information, or third-party services</li>
+        <li>We are not liable for loss of data, loss of profits, loss of goodwill, device issues, service unavailability, business interruption, or security incidents not caused by our breach of mandatory legal obligations</li>
+        <li>We are not liable for the acts, omissions, content, or availability of third-party providers, platforms, app stores, operating systems, databases, analytics providers, error monitoring providers, or AI providers</li>
       </ul>
-      <p>Our total aggregate liability arising out of or relating to the use of the App shall not exceed:</p>
-      <blockquote>
-        The amount paid by you for the App during the 12 months preceding the claim, or €50 if greater.
-      </blockquote>
-      <p>If the Service is provided free of charge, liability shall be limited to the minimum amount permitted by law.</p>
-    </section>
+      <p>To the maximum extent permitted by applicable law, our total aggregate liability arising out of or relating to the App, the Service, these Terms, or any related claim shall not exceed:</p>
+      <blockquote>The total amount paid by you to us for the Service during the 12 months preceding the event giving rise to the claim, or EUR 50 if greater.</blockquote>
+      <p>If the Service is provided free of charge, our total aggregate liability shall be limited to the maximum extent permitted by applicable law.</p>
 
-    <section>
       <h2>8. Indemnification</h2>
-      <p>You agree to indemnify, defend, and hold harmless the Service provider from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable legal fees) arising out of:</p>
+      <p>To the maximum extent permitted by applicable law, you agree to indemnify, defend, and hold harmless the Service provider, its affiliates, contractors, and service providers from and against third-party claims, liabilities, damages, losses, costs, and expenses, including reasonable legal fees, arising out of or relating to:</p>
       <ul>
-        <li>Your use of the App</li>
-        <li>Your dietary or health decisions</li>
-        <li>Your violation of these Terms</li>
+        <li>Your unlawful use of the App or the Service</li>
         <li>Your misuse of the Service</li>
+        <li>Your violation of these Terms</li>
+        <li>Your violation of applicable law or third-party rights</li>
+        <li>Content, data, meal descriptions, images, or other submitted materials, to the extent a third-party claim results from your conduct or your materials</li>
       </ul>
-    </section>
+      <p>This indemnity does not apply to the extent a claim arises from our own fraud, willful misconduct, gross negligence, or other liability that cannot be excluded or limited under applicable law.</p>
 
-    <section>
       <h2>9. Privacy</h2>
       <p>Your use of the App is also governed by our Privacy Policy.</p>
-      <p>By using the App, you acknowledge that personal data is processed in accordance with the Privacy Policy.</p>
-    </section>
+      <p>By using the App, you acknowledge that personal data is processed as described in the Privacy Policy.</p>
 
-    <section>
-      <h2>10. Termination</h2>
+      <h2>10. Suspension, Termination, and Rights Requests</h2>
 
       <h3>10.1 By You</h3>
-      <p>You may stop using the App at any time. You may request account deletion in accordance with the Privacy Policy.</p>
+      <p>You may stop using the App at any time.</p>
+      <p>You may request account deletion, access to personal data, a copy or export of your data, data portability, or deletion of personal data by contacting <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a>.</p>
+      <p>We may request information reasonably necessary to verify the identity of the requester before acting on a request.</p>
+      <p>Depending on our then-current product configuration, we may fulfill a data access or export request through support, a temporary secure download link, or another reasonable method.</p>
 
       <h3>10.2 By Us</h3>
-      <p>We may suspend or terminate your access if:</p>
+      <p>We may suspend, limit, or terminate your access if:</p>
       <ul>
         <li>You violate these Terms</li>
-        <li>Fraud, abuse, or unlawful behavior is detected</li>
-        <li>Legal obligations require suspension</li>
+        <li>Fraud, abuse, security issues, or unlawful behavior are detected</li>
+        <li>Technical, operational, or legal reasons require restriction or suspension</li>
       </ul>
 
       <h3>10.3 Effect of Termination</h3>
       <p>Upon termination, your right to use the App immediately ceases.</p>
-      <p>We may retain certain data where required by law or as described in the Privacy Policy.</p>
-    </section>
+      <p>We may delete, disable, restrict, or stop processing access to submitted content, account data, or App functionality to the extent permitted by law and operationally necessary.</p>
+      <p>We may retain certain data where required by law or reasonably necessary for security, dispute handling, compliance, abuse prevention, rights-request handling, or as otherwise described in the Privacy Policy.</p>
 
-    <section>
       <h2>11. International Use</h2>
-      <p>The App may be accessed worldwide. You are responsible for complying with local laws applicable in your jurisdiction.</p>
-    </section>
+      <p>The App may be accessed worldwide.</p>
+      <p>You are responsible for complying with laws applicable in your jurisdiction.</p>
 
-    <section>
       <h2>12. Governing Law and Jurisdiction</h2>
-      <p>These Terms shall be governed by the laws of Italy.</p>
-      <p>Any disputes shall be subject to the jurisdiction of the competent courts in Italy, without prejudice to mandatory consumer protection laws applicable in your country of residence.</p>
-    </section>
+      <p>These Terms are governed by the laws of Italy.</p>
+      <p>Any dispute shall be subject to the jurisdiction of the competent courts in Italy, without prejudice to mandatory consumer protection laws applicable in your country of residence.</p>
 
-    <section>
       <h2>13. Severability</h2>
-      <p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
-    </section>
+      <p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions remain in full force and effect.</p>
 
-    <section>
-      <h2>14. Changes to Terms</h2>
+      <h2>14. Changes to These Terms</h2>
       <p>We may update these Terms from time to time.</p>
-      <p>Material changes may be communicated via in-app notice or email.</p>
-      <p>Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
+      <p>Material changes may be communicated by in-app notice, email, or by updating the effective date and version.</p>
+      <p>Continued use of the App after the updated Terms take effect constitutes acknowledgment of the revised Terms.</p>
+
+      <h2>15. Service Provider</h2>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td><strong>Name</strong></td><td>Cristian Tuli</td></tr>
+        <tr><td><strong>Address</strong></td><td>Via Vigevano 27, 20144 Milan, Italy</td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></td></tr>
+      </table>
+
+      <h2>16. Contact</h2>
+      <p>For questions regarding these Terms, or for requests relating to account access, personal data, export, portability, or deletion, contact:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></li>
+      </ul>
     </section>
 
-    <section>
-      <h2>15. Contact</h2>
-      <p>For questions regarding these Terms:</p>
+    <section id="versione-italiana" class="language-block" lang="it">
+      <div class="language-label">Italiano</div>
+
+      <h2>1. Accettazione dei Termini</h2>
+      <p>Scaricando, installando, creando un account o utilizzando l'app mobile BiteVoice AI e i relativi servizi (l'"App" o il "Servizio"), accetti di essere vincolato dai presenti Termini di Servizio ("Termini").</p>
+      <p>Se non accetti questi Termini, non devi utilizzare l'App.</p>
+      <p>Confermi di avere almeno:</p>
       <ul>
-        <li><strong>General support:</strong> <a href="mailto:support@bitevoice.ai">support@bitevoice.ai</a></li>
-        <li><strong>Privacy matters:</strong> <a href="mailto:privacy@bitevoice.ai">privacy@bitevoice.ai</a></li>
+        <li>16 anni nell'Unione Europea</li>
+        <li>13 anni negli Stati Uniti</li>
+        <li>Oppure l'età minima richiesta dalla legge applicabile nella tua giurisdizione</li>
+      </ul>
+
+      <h2>2. Descrizione del Servizio</h2>
+      <p>BiteVoice AI è un'applicazione per uso personale dedicata al monitoraggio nutrizionale e dello stile di vita.</p>
+      <p>Le funzionalità possono includere:</p>
+      <ul>
+        <li>Accesso all'account tramite email o provider di accesso di terze parti supportati</li>
+        <li>Registrazione dei pasti tramite input vocale o testuale</li>
+        <li>Parsing assistito da AI, estrazione degli alimenti e stima dei nutrienti</li>
+        <li>Ricerca tramite codice a barre attraverso database alimentari interni e di terze parti</li>
+        <li>Impostazione obiettivi, monitoraggio dei progressi, target calorici e di macronutrienti, grafici e riepiloghi</li>
+        <li>Tracciamento del peso, dell'acqua e promemoria</li>
+        <li>Analisi fotografica dei menu dei ristoranti e ordinamento dei piatti in base ai tuoi obiettivi</li>
+      </ul>
+      <p>Il Servizio utilizza automazione, intelligenza artificiale e fonti dati di terze parti per generare stime e suggerimenti.</p>
+      <p>Funzionalità, provider, modelli, fonti dati, limiti e disponibilità possono variare in base a dispositivo, piattaforma, area geografica, stato dell'account, rollout sperimentali o condizioni tecniche. Possiamo applicare limiti d'uso, rate limit, limiti settimanali o altre restrizioni in qualsiasi momento.</p>
+      <p>Il Servizio è fornito esclusivamente per finalità informative e di stile di vita.</p>
+
+      <h2>3. Account, Permessi e Contenuti Inviati</h2>
+
+      <h3>3.1 Creazione dell'Account e Responsabilità</h3>
+      <p>Per utilizzare l'App potrebbe essere necessario creare un account.</p>
+      <p>Accetti che:</p>
+      <ul>
+        <li>Le informazioni che fornisci siano accurate e lecite</li>
+        <li>Le tue credenziali e l'accesso ai tuoi dispositivi siano mantenuti con ragionevole sicurezza</li>
+        <li>Sei responsabile delle attività svolte tramite il tuo account</li>
+        <li>Aggiornerai le informazioni divenute inaccurate o non più attuali</li>
+      </ul>
+
+      <h3>3.2 Permessi del Dispositivo</h3>
+      <p>A seconda delle funzionalità che scegli di usare, potremmo chiederti di concedere permessi del dispositivo, come:</p>
+      <ul>
+        <li>Microfono o riconoscimento vocale</li>
+        <li>Fotocamera o libreria foto</li>
+        <li>Notifiche</li>
+      </ul>
+      <p>Se neghi o revochi un permesso, alcune funzionalità potrebbero non funzionare come previsto.</p>
+
+      <h3>3.3 Contenuti dell'Utente e Materiali Inviati</h3>
+      <p>Sei l'unico responsabile per qualsiasi testo, contenuto vocale, trascrizione, immagine, codice a barre, informazione di profilo, dato sugli obiettivi o altro materiale inviato tramite l'App.</p>
+      <p>Dichiari e garantisci che:</p>
+      <ul>
+        <li>Hai il diritto di inviare tali contenuti</li>
+        <li>I tuoi contenuti non violano la legge applicabile o diritti di terzi</li>
+        <li>Non invierai contenuti illeciti, lesivi, ingannevoli, abusivi, dannosi o fuorvianti</li>
+      </ul>
+      <p>Mantieni la titolarità dei contenuti che invii. Tuttavia, ci concedi una licenza limitata, non esclusiva, revocabile e mondiale per ospitare, conservare, trasmettere, riprodurre, trasformare, analizzare e altrimenti trattare tali contenuti esclusivamente nella misura necessaria per operare, proteggere, correggere, migliorare e fornire il Servizio.</p>
+
+      <h3>3.4 Registri di Accettazione Legale e Preferenze Marketing</h3>
+      <p>Per far funzionare il Servizio e mantenere registrazioni di conformità, possiamo registrare:</p>
+      <ul>
+        <li>La versione dei Termini e della Privacy Policy che hai accettato</li>
+        <li>La data e l'ora dell'accettazione</li>
+        <li>La fonte del flusso di accettazione, ad esempio signup o schermata di compliance</li>
+        <li>Lo stato del consenso marketing e gli aggiornamenti successivi delle preferenze marketing</li>
+      </ul>
+      <p>Puoi modificare le preferenze marketing dove tale opzione è disponibile nell'App oppure contattandoci.</p>
+
+      <h2>4. Uso Consentito</h2>
+
+      <h3>4.1 Uso Consentito</h3>
+      <p>Puoi usare l'App esclusivamente per il monitoraggio personale, non commerciale, della nutrizione e dello stile di vita.</p>
+
+      <h3>4.2 Usi Vietati</h3>
+      <p>Non puoi:</p>
+      <ul>
+        <li>Usare l'App per finalità illecite</li>
+        <li>Tentare di ottenere accesso non autorizzato a sistemi, infrastrutture o altri account</li>
+        <li>Effettuare reverse engineering, decompilare o disassemblare l'App salvo nei casi consentiti dalla legge imperativa</li>
+        <li>Estrarre, indicizzare, benchmarkare o raccogliere dati dell'App con mezzi automatizzati senza autorizzazione</li>
+        <li>Interferire con limiti d'uso, rate limit, quote, controlli di accesso o protezioni di sicurezza</li>
+        <li>Inviare malware, codice dannoso o traffico abusivo</li>
+        <li>Inviare contenuti che non hai il diritto di usare, comprese foto di menu, immagini di prodotti o dati personali di terzi</li>
+        <li>Usare l'App per trattare o archiviare contenuti illeciti, lesivi, molesti, d'odio, ingannevoli o abusivi</li>
+        <li>Usare l'App per decisioni mediche, emergenziali, regolatorie, assicurative, legali o altre decisioni ad alto rischio</li>
+        <li>Copiare, rivendere, redistribuire, sublicenziare o sfruttare l'App o i suoi output oltre l'uso personale senza autorizzazione</li>
+      </ul>
+
+      <h2>5. Proprietà Intellettuale</h2>
+      <p>Tutti i diritti, titoli e interessi relativi all'App, inclusi software, modelli, prompt, marchi, design, database e altri materiali del Servizio, restano di esclusiva proprietà del fornitore del Servizio o dei suoi licenzianti.</p>
+      <p>L'uso dell'App non ti trasferisce alcun diritto di proprietà sull'App o sul Servizio.</p>
+
+      <h2>6. Avvertenze Importanti</h2>
+
+      <h3>6.1 Nessun Consiglio Medico, Nutrizionale o Sanitario</h3>
+      <p>BiteVoice AI non è un dispositivo medico e non fornisce consulenza medica, nutrizionale, diagnostica, sanitaria o terapeutica.</p>
+      <p>Non diagnostichiamo, preveniamo, monitoriamo o trattiamo malattie. Output, calcoli degli obiettivi, ranking dei menu, promemoria e stime nutrizionali sono forniti esclusivamente per finalità informative e di stile di vita.</p>
+      <p>Devi consultare professionisti qualificati per decisioni mediche, dietetiche o relative alla salute.</p>
+
+      <h3>6.2 Accuratezza di AI, Barcode, Menu e Database</h3>
+      <p>L'App si basa su:</p>
+      <ul>
+        <li>Input forniti dall'utente</li>
+        <li>Trascrizione vocale e riconoscimento del parlato</li>
+        <li>Parsing e analisi automatica tramite AI</li>
+        <li>Immagini caricate e relativa qualità</li>
+        <li>Database nutrizionali interni e di terze parti</li>
+        <li>Dati prodotto da barcode e informazioni sui menu dei ristoranti</li>
+      </ul>
+      <p>Non garantiamo l'accuratezza, completezza, affidabilità, idoneità, liceità, disponibilità o tempestività di alcun output, stima, ranking, promemoria, calcolo nutrizionale, trascrizione, risultato barcode, analisi menu o altro contenuto generato o mostrato dall'App.</p>
+      <p>Sei l'unico responsabile della verifica degli output e delle tue decisioni alimentari, di acquisto, di ristorante, di allenamento, di salute e di stile di vita.</p>
+
+      <h3>6.3 Servizi di Terze Parti</h3>
+      <p>L'App può dipendere da provider terzi, inclusi provider di autenticazione, strumenti di analytics, strumenti di monitoraggio errori, provider AI, database alimentari, provider di hosting, sistemi operativi e app store.</p>
+      <p>Non controlliamo e non garantiamo atti, omissioni, contenuti, policy, sicurezza o disponibilità dei servizi di terze parti.</p>
+
+      <h3>6.4 Disponibilità, Modifiche e Limiti</h3>
+      <p>Non garantiamo un accesso all'App continuo, sicuro, tempestivo o privo di errori.</p>
+      <p>Possiamo aggiungere, modificare, limitare, sospendere, disabilitare, sottoporre a rate limit, subordinare o interrompere qualsiasi funzionalità, provider, modello, fonte dati, formato di output o parte del Servizio in qualsiasi momento, con o senza preavviso.</p>
+
+      <h3>6.5 Assenza di Garanzie</h3>
+      <p>Nella misura massima consentita dalla legge applicabile, l'App e il Servizio sono forniti <strong>"cosi come sono" e "secondo disponibilità"</strong>, senza garanzie di alcun tipo, espresse o implicite, incluse garanzie implicite di commerciabilità, idoneità a uno scopo particolare, accuratezza, disponibilità o non violazione.</p>
+
+      <h2>7. Limitazione di Responsabilità</h2>
+      <p>Nella misura massima consentita dalla legge applicabile, e salvo i casi in cui la responsabilità non possa essere esclusa o limitata in base a norme imperative, inclusi frode, dichiarazioni fraudolente, dolo, colpa grave, morte o lesioni personali causate da un nostro atto o omissione ove tale esclusione sia vietata, o violazione di diritti inderogabili del consumatore:</p>
+      <ul>
+        <li>L'App e tutti gli output, stime, analisi, calcoli, promemoria e contenuti informativi sono forniti a tuo rischio</li>
+        <li>Non siamo responsabili per danni indiretti, incidentali, consequenziali, speciali, punitivi o esemplari</li>
+        <li>Non siamo responsabili per esiti sanitari, conseguenze dietetiche, scelte alimentari, scelte di menu, scelte di allenamento o altre decisioni prese o non prese sulla base dell'App o dei suoi output</li>
+        <li>Non siamo responsabili per inaccuratezze, omissioni o variabilità derivanti da input utente, trascrizione, qualità delle immagini, scansioni barcode, output generati dall'AI, database alimentari di terzi, informazioni sui menu o servizi di terze parti</li>
+        <li>Non siamo responsabili per perdita di dati, perdita di profitti, perdita di avviamento, problemi del dispositivo, indisponibilità del servizio, interruzione dell'attività o incidenti di sicurezza non causati dalla violazione di obblighi legali inderogabili da parte nostra</li>
+        <li>Non siamo responsabili per atti, omissioni, contenuti o disponibilità di provider terzi, piattaforme, app store, sistemi operativi, database, provider analytics, provider di monitoraggio errori o provider AI</li>
+      </ul>
+      <p>Nella misura massima consentita dalla legge applicabile, la nostra responsabilità complessiva totale derivante da o relativa all'App, al Servizio, ai presenti Termini o a qualsiasi pretesa collegata non eccederà:</p>
+      <blockquote>L'importo totale da te corrisposto a noi per il Servizio nei 12 mesi precedenti all'evento che ha dato origine alla pretesa, oppure EUR 50 se superiore.</blockquote>
+      <p>Se il Servizio è fornito gratuitamente, la nostra responsabilità complessiva totale sarà limitata nella misura massima consentita dalla legge applicabile.</p>
+
+      <h2>8. Manleva</h2>
+      <p>Nella misura massima consentita dalla legge applicabile, accetti di manlevare, difendere e tenere indenni il fornitore del Servizio, le sue affiliate, i suoi collaboratori e service provider da pretese di terzi, responsabilità, danni, perdite, costi e spese, comprese ragionevoli spese legali, derivanti da o relativi a:</p>
+      <ul>
+        <li>Tuo uso illecito dell'App o del Servizio</li>
+        <li>Tuo uso improprio del Servizio</li>
+        <li>Tua violazione dei presenti Termini</li>
+        <li>Tua violazione della legge applicabile o di diritti di terzi</li>
+        <li>Contenuti, dati, descrizioni dei pasti, immagini o altri materiali inviati da te, nella misura in cui una pretesa di terzi derivi dalla tua condotta o dai tuoi materiali</li>
+      </ul>
+      <p>Questa manleva non si applica nella misura in cui una pretesa derivi da nostra frode, dolo, colpa grave o altra responsabilità che non possa essere esclusa o limitata ai sensi della legge applicabile.</p>
+
+      <h2>9. Privacy</h2>
+      <p>L'uso dell'App è disciplinato anche dalla nostra Privacy Policy.</p>
+      <p>Usando l'App, riconosci che i dati personali sono trattati come descritto nella Privacy Policy.</p>
+
+      <h2>10. Sospensione, Cessazione e Richieste sui Dati</h2>
+
+      <h3>10.1 Da Parte Tua</h3>
+      <p>Puoi smettere di usare l'App in qualsiasi momento.</p>
+      <p>Puoi richiedere la cancellazione dell'account, l'accesso ai dati personali, una copia o esportazione dei tuoi dati, la portabilità dei dati o la cancellazione dei dati personali contattando <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a>.</p>
+      <p>Possiamo chiedere informazioni ragionevolmente necessarie per verificare l'identità del richiedente prima di dare seguito alla richiesta.</p>
+      <p>A seconda della configurazione del prodotto in quel momento, potremmo soddisfare una richiesta di accesso o export tramite supporto, tramite link temporaneo e sicuro per il download o con altro metodo ragionevole.</p>
+
+      <h3>10.2 Da Parte Nostra</h3>
+      <p>Possiamo sospendere, limitare o terminare il tuo accesso se:</p>
+      <ul>
+        <li>Violi questi Termini</li>
+        <li>Vengono rilevati frode, abuso, problemi di sicurezza o comportamenti illeciti</li>
+        <li>Ragioni tecniche, operative o legali richiedono restrizione o sospensione</li>
+      </ul>
+
+      <h3>10.3 Effetti della Cessazione</h3>
+      <p>Alla cessazione, il tuo diritto di usare l'App termina immediatamente.</p>
+      <p>Possiamo eliminare, disabilitare, limitare o interrompere il trattamento dell'accesso a contenuti inviati, dati account o funzionalità dell'App nella misura consentita dalla legge e operativamente necessaria.</p>
+      <p>Possiamo conservare alcuni dati ove richiesto dalla legge o ragionevolmente necessario per sicurezza, gestione delle controversie, conformità, prevenzione abusi, gestione delle richieste sui diritti o come altrimenti descritto nella Privacy Policy.</p>
+
+      <h2>11. Uso Internazionale</h2>
+      <p>L'App può essere accessibile in tutto il mondo.</p>
+      <p>Sei responsabile del rispetto delle leggi applicabili nella tua giurisdizione.</p>
+
+      <h2>12. Legge Applicabile e Foro Competente</h2>
+      <p>I presenti Termini sono regolati dalla legge italiana.</p>
+      <p>Qualsiasi controversia sarà soggetta alla giurisdizione dei tribunali competenti in Italia, fatto salvo l'eventuale regime inderogabile di tutela del consumatore applicabile nel tuo paese di residenza.</p>
+
+      <h2>13. Clausola di Salvaguardia</h2>
+      <p>Se una disposizione dei presenti Termini viene ritenuta invalida o inapplicabile, le restanti disposizioni restano pienamente valide ed efficaci.</p>
+
+      <h2>14. Modifiche ai Termini</h2>
+      <p>Possiamo aggiornare questi Termini di volta in volta.</p>
+      <p>Le modifiche sostanziali possono essere comunicate tramite avviso in-app, email, oppure aggiornando data di efficacia e versione.</p>
+      <p>L'uso continuato dell'App dopo l'entrata in vigore dei Termini aggiornati costituisce presa d'atto dei Termini rivisti.</p>
+
+      <h2>15. Fornitore del Servizio</h2>
+      <table>
+        <tr><th>Campo</th><th>Valore</th></tr>
+        <tr><td><strong>Nome</strong></td><td>Cristian Tuli</td></tr>
+        <tr><td><strong>Indirizzo</strong></td><td>Via Vigevano 27, 20144 Milano, Italia</td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></td></tr>
+      </table>
+
+      <h2>16. Contatti</h2>
+      <p>Per domande relative a questi Termini, oppure per richieste relative ad accesso account, dati personali, export, portabilità o cancellazione, contatta:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></li>
       </ul>
     </section>
 
     <footer>
-      <p><strong>Legal Notice:</strong> This is a draft. It must be reviewed by legal counsel before publication.</p>
+      <p><strong>Legal Notice:</strong> This is a draft. It should be reviewed by legal counsel before publication.</p>
     </footer>
   </main>
 </body>
