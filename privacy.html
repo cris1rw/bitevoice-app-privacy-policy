@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Service — BiteVoice AI</title>
-  <meta name="description" content="Terms of Service for BiteVoice AI" />
+  <title>Privacy Policy / Informativa Privacy — BiteVoice AI</title>
+  <meta name="description" content="Bilingual Privacy Policy for BiteVoice AI" />
   <style>
     :root {
       --text: #111827;
@@ -13,73 +13,118 @@
       --bg: #ffffff;
       --bg-soft: #f9fafb;
       --link: #2563eb;
+      --accent: #dbeafe;
       --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: var(--sans);
       color: var(--text);
       background: var(--bg);
-      line-height: 1.6;
+      line-height: 1.65;
     }
     main {
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 32px 18px 64px;
+      padding: 32px 18px 72px;
     }
     header {
-      padding-bottom: 16px;
+      padding-bottom: 18px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 24px;
     }
     h1 {
       margin: 0 0 8px;
-      font-size: 28px;
+      font-size: 30px;
       line-height: 1.2;
     }
-    .meta {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
     h2 {
-      margin-top: 28px;
-      margin-bottom: 10px;
-      font-size: 18px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      line-height: 1.3;
     }
     h3 {
-      margin-top: 18px;
+      margin-top: 26px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+    h4 {
+      margin-top: 16px;
       margin-bottom: 8px;
       font-size: 16px;
+      line-height: 1.4;
     }
     p { margin: 10px 0; }
     ul { margin: 8px 0 12px 22px; }
     li { margin: 6px 0; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .note {
+    .meta {
+      margin: 2px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .lang-note {
       background: var(--bg-soft);
       border: 1px solid var(--border);
-      padding: 12px 14px;
-      border-radius: 10px;
-      color: var(--muted);
-      margin: 14px 0;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin: 16px 0;
     }
-    blockquote {
-      margin: 14px 0;
-      padding: 10px 14px;
-      border-left: 3px solid var(--border);
+    .lang-note p {
+      margin: 8px 0;
+      color: var(--muted);
+    }
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 6px;
+    }
+    .toc a {
+      display: inline-block;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
       background: var(--bg-soft);
-      color: var(--muted);
+      font-size: 14px;
     }
-    code {
-      font-family: var(--mono);
-      font-size: 0.95em;
+    .language-block {
+      margin-top: 34px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    .language-label {
+      display: inline-block;
+      margin: 0 0 8px;
+      padding: 6px 10px;
+      background: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+    }
+    th {
+      background: var(--bg-soft);
     }
     footer {
-      margin-top: 36px;
+      margin-top: 42px;
       padding-top: 16px;
       border-top: 1px solid var(--border);
       color: var(--muted);
@@ -90,193 +135,607 @@
 <body>
   <main>
     <header>
-      <h1>Terms of Service — BiteVoice AI</h1>
-      <p class="meta"><strong>Version:</strong> Draft 1.1</p>
-      <p class="meta"><strong>Last Updated:</strong> February 2026</p>
+      <h1>Privacy Policy / Informativa Privacy — BiteVoice AI</h1>
+      <p class="meta"><strong>Version / Versione:</strong> 2026-03-26.1</p>
+      <p class="meta"><strong>Effective Date / Data di efficacia:</strong> March 26, 2026 / 26 marzo 2026</p>
+      <p class="meta"><strong>Last Updated / Ultimo aggiornamento:</strong> March 26, 2026 / 26 marzo 2026</p>
       <p class="meta"><strong>Status:</strong> Draft — Requires Legal Review before publication</p>
     </header>
 
-    <section>
-      <h2>1. Acceptance of Terms</h2>
-      <p>By downloading, installing, creating an account, or using the BiteVoice AI mobile application ("App"), you agree to be bound by these Terms of Service ("Terms").</p>
-      <p>If you do not agree to these Terms, you must not use the App.</p>
-      <p>You confirm that you are at least:</p>
-      <ul>
-        <li>16 years old in the European Union</li>
-        <li>13 years old in the United States</li>
-        <li>Or the minimum age required under applicable law</li>
-      </ul>
+    <section class="lang-note">
+      <p><strong>Language Notice.</strong> This document is provided in English and Italian on a single page for convenience. The two language versions are intended to reflect the same privacy terms and disclosures. To the maximum extent permitted by applicable law, the English version prevails in the event of conflict or inconsistency. If mandatory consumer protection law, privacy law, or other mandatory local law requires another language to prevail, that mandatory law will apply.</p>
+      <p><strong>Avviso sulla Lingua.</strong> Questo documento è fornito in inglese e italiano in un'unica pagina per comodità. Le due versioni linguistiche intendono riflettere gli stessi termini e disclosure privacy. Nella misura massima consentita dalla legge applicabile, in caso di conflitto o incoerenza prevale la versione inglese. Qualora norme imperative di tutela del consumatore, norme privacy o altre norme locali imperative richiedano la prevalenza di un'altra lingua, si applicheranno tali norme imperative.</p>
     </section>
 
-    <section>
-      <h2>2. Description of Service</h2>
-      <p>BiteVoice AI is a nutrition and lifestyle tracking application that allows users to:</p>
+    <nav class="toc" aria-label="Language navigation">
+      <a href="#english-version">English Version</a>
+      <a href="#versione-italiana">Versione Italiana</a>
+    </nav>
+
+    <section id="english-version" class="language-block" lang="en">
+      <div class="language-label">English</div>
+
+      <h2>1. Introduction</h2>
+      <p>BiteVoice AI ("we", "our", "us") is a nutrition and lifestyle tracking application. This Privacy Policy explains what personal data we collect, how we use it, when we share it, how long we keep it, and what rights you may have.</p>
+      <p>The Service is designed for informational and lifestyle purposes only. It is not a medical device and does not provide medical advice.</p>
+      <p>By creating an account, submitting data, or using the Service, you acknowledge that your information will be processed as described in this Privacy Policy.</p>
+
+      <h2>2. Data Controller</h2>
+      <table>
+        <tr><th>Field</th><th>Value</th></tr>
+        <tr><td><strong>Name</strong></td><td>Cristian Tuli</td></tr>
+        <tr><td><strong>Address</strong></td><td>Via Vigevano 27, 20144 Milan, Italy</td></tr>
+        <tr><td><strong>Country</strong></td><td>Italy</td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></td></tr>
+      </table>
+
+      <h2>3. Information We Collect</h2>
+
+      <h3>3.1 Account and Authentication Data</h3>
+      <p>We may collect:</p>
       <ul>
-        <li>Log meals via voice or text input</li>
-        <li>Track estimated nutrients and macronutrients</li>
-        <li>View progress and set personal goals</li>
-        <li>Scan barcodes for product lookup (where available)</li>
-      </ul>
-      <p>The App uses artificial intelligence and external food databases to estimate nutritional values.</p>
-      <p>The Service is provided for <strong>informational and lifestyle purposes only</strong>.</p>
-    </section>
-
-    <section>
-      <h2>3. Account and Registration</h2>
-
-      <h3>3.1 Account Creation</h3>
-      <ul>
-        <li>You must create an account to use the App</li>
-        <li>You must meet the minimum age requirements</li>
-        <li>You are responsible for maintaining the confidentiality of your login credentials</li>
-      </ul>
-      <p>You are responsible for all activity occurring under your account.</p>
-
-      <h3>3.2 Account Accuracy</h3>
-      <ul>
-        <li>You must provide accurate and truthful information</li>
-        <li>You must update your information if it changes</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Acceptable Use</h2>
-
-      <h3>4.1 Permitted Use</h3>
-      <p>You may use the App solely for personal, non-commercial nutrition tracking.</p>
-
-      <h3>4.2 Prohibited Use</h3>
-      <p>You may not:</p>
-      <ul>
-        <li>Use the App for unlawful purposes</li>
-        <li>Attempt to gain unauthorized access to systems or other accounts</li>
-        <li>Reverse engineer, decompile, or disassemble the App</li>
-        <li>Transmit malware or harmful code</li>
-        <li>Copy, resell, redistribute, or exploit the App or its data without permission</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>5. Intellectual Property</h2>
-      <p>All rights, title, and interest in the App, including software, branding, content, and databases, remain the exclusive property of the Service provider.</p>
-      <p>You do not acquire ownership rights by using the App.</p>
-    </section>
-
-    <section>
-      <h2>6. Disclaimers</h2>
-
-      <h3>6.1 No Medical Advice</h3>
-      <ul>
-        <li>BiteVoice AI is not a medical device</li>
-        <li>We do not provide medical, nutritional, or healthcare advice</li>
-        <li>We do not diagnose, prevent, or treat diseases</li>
-        <li>Nutrient data is provided for informational purposes only</li>
-      </ul>
-      <p>You must consult qualified healthcare professionals for medical or dietary decisions.</p>
-
-      <h3>6.2 Accuracy Disclaimer</h3>
-      <p>The App relies on:</p>
-      <ul>
-        <li>User-provided input</li>
-        <li>Automated AI parsing</li>
-        <li>Third-party nutritional databases</li>
-      </ul>
-      <p>We do not guarantee the accuracy, completeness, or reliability of any nutritional calculations or data.</p>
-      <p>You are solely responsible for your dietary and health decisions.</p>
-
-      <h3>6.3 Service Availability</h3>
-      <p>We strive to maintain availability but do not guarantee uninterrupted access.</p>
-      <p>We may modify, suspend, or discontinue the App at any time without prior notice.</p>
-
-      <h3>6.4 “As Is” and “As Available”</h3>
-      <p>The App is provided on an <strong>“as is” and “as available”</strong> basis without warranties of any kind, whether express or implied, including but not limited to warranties of accuracy, fitness for a particular purpose, or non-infringement.</p>
-    </section>
-
-    <section>
-      <h2>7. Limitation of Liability</h2>
-      <p>To the maximum extent permitted by applicable law:</p>
-      <ul>
-        <li>We shall not be liable for any indirect, incidental, consequential, special, punitive, or exemplary damages.</li>
-        <li>We shall not be liable for any health outcomes, dietary consequences, or decisions made based on information provided by the App.</li>
-        <li>We shall not be liable for loss of data, loss of profits, or service interruptions.</li>
-      </ul>
-      <p>Our total aggregate liability arising out of or relating to the use of the App shall not exceed:</p>
-      <blockquote>
-        The amount paid by you for the App during the 12 months preceding the claim, or €50 if greater.
-      </blockquote>
-      <p>If the Service is provided free of charge, liability shall be limited to the minimum amount permitted by law.</p>
-    </section>
-
-    <section>
-      <h2>8. Indemnification</h2>
-      <p>You agree to indemnify, defend, and hold harmless the Service provider from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable legal fees) arising out of:</p>
-      <ul>
-        <li>Your use of the App</li>
-        <li>Your dietary or health decisions</li>
-        <li>Your violation of these Terms</li>
-        <li>Your misuse of the Service</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>9. Privacy</h2>
-      <p>Your use of the App is also governed by our Privacy Policy.</p>
-      <p>By using the App, you acknowledge that personal data is processed in accordance with the Privacy Policy.</p>
-    </section>
-
-    <section>
-      <h2>10. Termination</h2>
-
-      <h3>10.1 By You</h3>
-      <p>You may stop using the App at any time. You may request account deletion in accordance with the Privacy Policy.</p>
-
-      <h3>10.2 By Us</h3>
-      <p>We may suspend or terminate your access if:</p>
-      <ul>
-        <li>You violate these Terms</li>
-        <li>Fraud, abuse, or unlawful behavior is detected</li>
-        <li>Legal obligations require suspension</li>
+        <li>Email address</li>
+        <li>Authentication provider identifiers and login metadata</li>
+        <li>Session and security data managed through Supabase Auth</li>
+        <li>Third-party sign-in data from Apple or Google, which may include account identifiers and, where made available by the provider, your name or email address</li>
+        <li>Optional nickname or profile display name</li>
       </ul>
 
-      <h3>10.3 Effect of Termination</h3>
-      <p>Upon termination, your right to use the App immediately ceases.</p>
-      <p>We may retain certain data where required by law or as described in the Privacy Policy.</p>
-    </section>
+      <h3>3.2 Profile, Goal, and Preference Data</h3>
+      <p>We may collect profile, goal, and preference information that you choose to provide or confirm, including:</p>
+      <ul>
+        <li>Date of birth and/or age</li>
+        <li>Height, weight, and biological sex</li>
+        <li>Nutrition goal, goal rate, activity level, weekly workouts, and daily steps</li>
+        <li>Calorie, macro, and water targets</li>
+        <li>Locale, language, reminder preferences, and parsing-related preferences</li>
+      </ul>
 
-    <section>
-      <h2>11. International Use</h2>
-      <p>The App may be accessed worldwide. You are responsible for complying with local laws applicable in your jurisdiction.</p>
-    </section>
+      <h3>3.3 Nutrition and Lifestyle Tracking Data</h3>
+      <p>We process data you submit to use the Service, including:</p>
+      <ul>
+        <li>Meal descriptions entered by text</li>
+        <li>Voice input and speech-to-text transcriptions</li>
+        <li>Parsed meal structures, food items, portions, nutrient estimates, and meal timestamps</li>
+        <li>Barcode scans and product data used for food logging</li>
+        <li>Weight logs and water logs</li>
+        <li>Menu photos you choose to upload for restaurant menu analysis</li>
+        <li>Temporary menu image files, extracted menu analysis results, and limited goal-context values used to rank dishes against your targets</li>
+      </ul>
+      <p>If you include personal data in free-text meal descriptions, voice input, or uploaded images, we will process that content because you submitted it.</p>
 
-    <section>
-      <h2>12. Governing Law and Jurisdiction</h2>
-      <p>These Terms shall be governed by the laws of Italy.</p>
-      <p>Any disputes shall be subject to the jurisdiction of the competent courts in Italy, without prejudice to mandatory consumer protection laws applicable in your country of residence.</p>
-    </section>
+      <h3>3.4 Compliance, Consent, and Administrative Records</h3>
+      <p>We may collect or generate records such as:</p>
+      <ul>
+        <li>The current or historical versions of the Terms and Privacy Policy you accepted</li>
+        <li>Timestamps and source of legal acceptance or compliance review flows</li>
+        <li>Marketing opt-in status and marketing preference update timestamps</li>
+        <li>Support, deletion, data access, portability, and export request records</li>
+        <li>Temporary data-export file metadata and limited audit records relating to those requests</li>
+      </ul>
 
-    <section>
-      <h2>13. Severability</h2>
-      <p>If any provision of these Terms is found invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
-    </section>
+      <h3>3.5 Device, Usage, and Diagnostic Data</h3>
+      <p>We may collect technical and usage data, such as:</p>
+      <ul>
+        <li>Device type, operating system, app version, locale, and technical identifiers</li>
+        <li>Screen views, interaction events, and pseudonymous analytics data</li>
+        <li>Error logs, breadcrumbs, crash data, performance traces, and debugging metadata</li>
+        <li>User ID associated with analytics or diagnostics where needed for troubleshooting</li>
+      </ul>
+      <p>We do not currently enable automatic screenshot or view-hierarchy capture in Sentry.</p>
 
-    <section>
-      <h2>14. Changes to Terms</h2>
-      <p>We may update these Terms from time to time.</p>
-      <p>Material changes may be communicated via in-app notice or email.</p>
-      <p>Continued use of the App after changes constitutes acceptance of the updated Terms.</p>
-    </section>
+      <h3>3.6 Permissions and Local Device Data</h3>
+      <p>Depending on the features you use, the App may request access to:</p>
+      <ul>
+        <li>Microphone and speech recognition</li>
+        <li>Camera and photo library</li>
+        <li>Notifications</li>
+      </ul>
+      <p>The App may also store certain settings locally on your device, such as language preferences, reminder schedules, and temporary drafts.</p>
 
-    <section>
+      <h2>4. Legal Bases for Processing</h2>
+      <table>
+        <tr>
+          <th>Purpose</th>
+          <th>Examples</th>
+          <th>Legal Basis</th>
+        </tr>
+        <tr>
+          <td>Account creation, authentication, and core app functionality</td>
+          <td>login, meal logging, barcode lookup, menu analysis, progress tracking, goals, weight and water tracking</td>
+          <td>Performance of a contract</td>
+        </tr>
+        <tr>
+          <td>Optional features you actively choose to use</td>
+          <td>voice input, camera or photo access, reminders, menu photo uploads</td>
+          <td>Your request to use the feature and, where required, your consent</td>
+        </tr>
+        <tr>
+          <td>Security, fraud prevention, abuse prevention, rate limiting, debugging, diagnostics, and service reliability</td>
+          <td>crash reporting, enforcing limits, investigating misuse</td>
+          <td>Legitimate interests</td>
+        </tr>
+        <tr>
+          <td>Compliance and administrative recordkeeping</td>
+          <td>recording accepted legal versions, handling rights requests, keeping export-request logs</td>
+          <td>Legal obligation or legitimate interests, depending on context</td>
+        </tr>
+        <tr>
+          <td>Marketing communications</td>
+          <td>email updates or promotional communications, if enabled</td>
+          <td>Consent</td>
+        </tr>
+      </table>
+      <p>Depending on applicable law, some profile, nutrition, or lifestyle tracking data may be considered health-related or otherwise sensitive. You choose whether to provide this information. If you do, we process it to provide the Service you requested and, where required by law, based on your consent or at your direction.</p>
+
+      <h2>5. How We Use Your Information</h2>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Create and manage your account</li>
+        <li>Authenticate you and maintain secure sessions</li>
+        <li>Log meals and generate nutrition estimates</li>
+        <li>Analyze restaurant menus from uploaded images</li>
+        <li>Look up barcode products through internal and third-party food databases</li>
+        <li>Calculate and display goals, progress, trends, charts, and summaries</li>
+        <li>Support weight tracking, water tracking, and reminders</li>
+        <li>Operate, secure, debug, monitor, and improve the Service</li>
+        <li>Prevent abuse, enforce rate limits, and investigate misuse</li>
+        <li>Record legal acceptance status and marketing preference changes</li>
+        <li>Respond to support requests and privacy rights requests</li>
+        <li>Provide a copy or export of your data when required or reasonably appropriate</li>
+        <li>Send marketing communications only where you have opted in</li>
+      </ul>
+      <p>We do not sell your personal data.</p>
+
+      <h2>6. Third-Party Service Providers and Data Sharing</h2>
+      <p>We share data only as needed to run the Service, comply with law, protect rights, prevent abuse, or follow your direction.</p>
+
+      <h3>Supabase (EU)</h3>
+      <p>Used for:</p>
+      <ul>
+        <li>Database</li>
+        <li>Authentication</li>
+        <li>Edge functions</li>
+        <li>Storage related to app operation, including temporary menu image uploads where applicable</li>
+        <li>Temporary storage of export files and related operational processing</li>
+      </ul>
+      <p>Data may include account information, profile data, meals, goals, weight logs, water logs, legal acceptance records, export-request records, and related app data.</p>
+
+      <h3>OpenAI (United States)</h3>
+      <p>Used for:</p>
+      <ul>
+        <li>AI-based meal parsing</li>
+        <li>Nutrient estimation fallback</li>
+        <li>Restaurant menu image analysis</li>
+      </ul>
+      <p>Data sent may include:</p>
+      <ul>
+        <li>Meal text and edited transcriptions</li>
+        <li>Menu images</li>
+        <li>Language</li>
+        <li>Limited goal-context values needed for analysis or ranking</li>
+      </ul>
+      <p>We do not intentionally send direct account identifiers such as your email address to OpenAI unless you include them in submitted content.</p>
+
+      <h3>PostHog (EU)</h3>
+      <p>Used for:</p>
+      <ul>
+        <li>Product analytics</li>
+        <li>Event tracking</li>
+        <li>Screen tracking</li>
+      </ul>
+      <p>Data may include pseudonymous usage events, device or app metadata, and user ID.</p>
+
+      <h3>Sentry (United States)</h3>
+      <p>Used for:</p>
+      <ul>
+        <li>Error monitoring</li>
+        <li>Crash reporting</li>
+        <li>Performance diagnostics</li>
+      </ul>
+      <p>Data may include device or app metadata, error traces, breadcrumbs, performance data, and user ID. We do not currently enable automatic screenshot or view-hierarchy capture in Sentry.</p>
+
+      <h3>Expo, EAS, and Platform Providers</h3>
+      <p>Used for:</p>
+      <ul>
+        <li>App delivery and over-the-air updates</li>
+        <li>Auth and browser redirect flows</li>
+        <li>Platform services required to run the App</li>
+        <li>Notification permissions and related platform services where applicable</li>
+      </ul>
+      <p>Depending on your platform and device, Apple, Google, Expo, or other OS or platform providers may also process data related to sign-in, notifications, speech recognition, or device permissions under their own policies. Reminder schedules may also be stored locally on your device.</p>
+
+      <h3>Open Food Facts (EU)</h3>
+      <p>Used for:</p>
+      <ul>
+        <li>Barcode product lookup</li>
+        <li>Nutritional product data</li>
+      </ul>
+      <p>Data shared is generally limited to barcode or product lookup information and related query data.</p>
+
+      <h3>Legal and Protective Disclosures</h3>
+      <p>We may also disclose information:</p>
+      <ul>
+        <li>If required by law, regulation, court order, or lawful request</li>
+        <li>To protect the rights, safety, or property of users, the public, or the Service</li>
+        <li>In connection with a merger, acquisition, financing, or sale of assets</li>
+      </ul>
+
+      <h2>7. International Data Transfers</h2>
+      <p>Some providers we use are located outside the European Economic Area, including in the United States, or may process data globally depending on their infrastructure.</p>
+      <p>Where applicable, we rely on measures such as:</p>
+      <ul>
+        <li>Contractual safeguards with providers</li>
+        <li>Data minimization</li>
+        <li>Access controls and security measures</li>
+      </ul>
+      <p>You may contact us for more information about cross-border processing safeguards.</p>
+
+      <h2>8. Data Storage and Security</h2>
+      <p>We use reasonable technical and organizational measures designed to protect personal data, including:</p>
+      <ul>
+        <li>Encryption in transit</li>
+        <li>Access controls</li>
+        <li>Row Level Security where implemented for app data</li>
+        <li>Authentication and session controls</li>
+        <li>Data minimization in provider requests where practical</li>
+      </ul>
+      <p>No system can be guaranteed perfectly secure. You use the Service at your own risk and should avoid submitting unnecessary personal data in meal text, voice input, or uploaded images.</p>
+
+      <h2>9. Data Retention</h2>
+      <p>We retain personal data for as long as reasonably necessary for the purposes described in this Privacy Policy, unless a longer period is required by law or reasonably necessary for security, dispute handling, abuse prevention, or compliance.</p>
+      <p>In general:</p>
+      <ul>
+        <li>Account, profile, meal, goal, weight, and water data are retained while your account remains active</li>
+        <li>Temporary menu images may be stored briefly for processing and removed after processing where technically possible</li>
+        <li>Legal acceptance records, marketing preference records, and rights-request logs may be retained as compliance or audit records for as long as reasonably necessary</li>
+        <li>Temporary export files are intended to expire shortly and be cleaned up after expiry; we may keep a limited log of export requests as an audit record</li>
+        <li>Analytics, crash, and technical logs may be retained according to operational needs and provider settings</li>
+        <li>If you delete your account, we will delete or anonymize application data without undue delay, subject to limited residual retention in backups, logs, or legal records where technically necessary or legally required</li>
+      </ul>
+      <p>If you stop using the Service without deleting your account, we may retain your data until deletion is requested or the account is otherwise removed.</p>
+
+      <h2>10. Your Rights</h2>
+      <p>Depending on your location, you may have rights such as:</p>
+      <ul>
+        <li>Access to your personal data</li>
+        <li>Correction of inaccurate data</li>
+        <li>Deletion</li>
+        <li>A copy or export of your data</li>
+        <li>Data portability where applicable</li>
+        <li>Restriction of or objection to certain processing</li>
+        <li>Withdrawal of consent where processing is based on consent</li>
+        <li>The right to lodge a complaint with a competent supervisory authority</li>
+      </ul>
+      <p>To exercise your rights, including requests for access, a copy or export of your data, portability, or account and personal data deletion, contact <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a>.</p>
+      <p>We may request information reasonably necessary to verify your identity before processing the request.</p>
+      <p>Depending on our then-current product configuration, we may fulfill a request through support, a temporary secure download link, or another reasonable method.</p>
+      <p>We aim to respond as soon as reasonably possible and, where applicable law requires, within the time limits set by that law, including generally within 30 days for GDPR-related requests.</p>
+      <p>If you previously opted in to marketing communications, you may withdraw that consent through available in-app controls or by contacting us.</p>
+
+      <h2>11. Age Restrictions</h2>
+      <p>The Service is not intended for children below the minimum age permitted under applicable law.</p>
+      <p>Current intended minimum ages:</p>
+      <ul>
+        <li>European Union: 16+</li>
+        <li>United States: 13+</li>
+      </ul>
+      <p>If you believe a child has provided personal data in violation of these rules, contact us and we will review and, where appropriate, remove the data.</p>
+
+      <h2>12. California and Similar Privacy Rights</h2>
+      <p>If you are a California resident or have similar rights under applicable state law, you may have rights to request access, deletion, correction, and information about categories of personal data collected and disclosed.</p>
+      <p>We do not sell personal data and do not knowingly discriminate against users for exercising applicable privacy rights.</p>
+
+      <h2>13. Medical and AI Disclosure</h2>
+      <p>BiteVoice AI is not a medical device and does not provide medical, nutritional, diagnostic, or treatment advice.</p>
+      <p>AI-generated outputs, barcode results, menu analysis, reminders, and nutritional estimates may be inaccurate, incomplete, outdated, or unsuitable for your specific situation.</p>
+      <p>Do not rely on the Service for medical, emergency, or safety-critical decisions. Consult qualified professionals where appropriate.</p>
+
+      <h2>14. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time.</p>
+      <p>Material changes may be communicated in-app, by email, or by updating the effective date and version.</p>
+      <p>Continued use of the Service after the updated Policy takes effect constitutes acknowledgment of the revised Policy.</p>
+
       <h2>15. Contact</h2>
-      <p>For questions regarding these Terms:</p>
+      <p>If you have questions about this Privacy Policy or our data practices, or if you want to submit a request relating to access, export, portability, or deletion, contact:</p>
       <ul>
-        <li><strong>General support:</strong> <a href="mailto:support@bitevoice.ai">support@bitevoice.ai</a></li>
-        <li><strong>Privacy matters:</strong> <a href="mailto:privacy@bitevoice.ai">privacy@bitevoice.ai</a></li>
+        <li><strong>Email:</strong> <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></li>
+      </ul>
+    </section>
+
+    <section id="versione-italiana" class="language-block" lang="it">
+      <div class="language-label">Italiano</div>
+
+      <h2>1. Introduzione</h2>
+      <p>BiteVoice AI ("noi", "nostro", "ci") è un'applicazione per il monitoraggio della nutrizione e dello stile di vita. La presente Privacy Policy spiega quali dati personali raccogliamo, come li utilizziamo, quando li condividiamo, per quanto tempo li conserviamo e quali diritti potresti avere.</p>
+      <p>Il Servizio è progettato esclusivamente per finalità informative e di stile di vita. Non è un dispositivo medico e non fornisce consulenza medica.</p>
+      <p>Creando un account, inviando dati o utilizzando il Servizio, riconosci che le tue informazioni saranno trattate come descritto nella presente Privacy Policy.</p>
+
+      <h2>2. Titolare del Trattamento</h2>
+      <table>
+        <tr><th>Campo</th><th>Valore</th></tr>
+        <tr><td><strong>Nome</strong></td><td>Cristian Tuli</td></tr>
+        <tr><td><strong>Indirizzo</strong></td><td>Via Vigevano 27, 20144 Milano, Italia</td></tr>
+        <tr><td><strong>Paese</strong></td><td>Italia</td></tr>
+        <tr><td><strong>Email</strong></td><td><a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></td></tr>
+      </table>
+
+      <h2>3. Informazioni che Raccogliamo</h2>
+
+      <h3>3.1 Dati di Account e Autenticazione</h3>
+      <p>Possiamo raccogliere:</p>
+      <ul>
+        <li>Indirizzo email</li>
+        <li>Identificativi del provider di autenticazione e metadati di login</li>
+        <li>Dati di sessione e sicurezza gestiti tramite Supabase Auth</li>
+        <li>Dati di accesso di terze parti da Apple o Google, che possono includere identificativi account e, dove resi disponibili dal provider, nome o email</li>
+        <li>Nickname opzionale o nome profilo visualizzato</li>
+      </ul>
+
+      <h3>3.2 Dati di Profilo, Obiettivi e Preferenze</h3>
+      <p>Possiamo raccogliere informazioni di profilo, obiettivi e preferenze che scegli di fornire o confermare, incluse:</p>
+      <ul>
+        <li>Data di nascita e/o età</li>
+        <li>Altezza, peso e sesso biologico</li>
+        <li>Obiettivo nutrizionale, velocità dell'obiettivo, livello di attività, allenamenti settimanali e passi giornalieri</li>
+        <li>Target calorici, di macronutrienti e di acqua</li>
+        <li>Lingua, area geografica, preferenze promemoria e preferenze legate al parsing</li>
+      </ul>
+
+      <h3>3.3 Dati di Monitoraggio Nutrizionale e di Stile di Vita</h3>
+      <p>Trattiamo i dati che invii per usare il Servizio, inclusi:</p>
+      <ul>
+        <li>Descrizioni dei pasti inserite come testo</li>
+        <li>Input vocale e trascrizioni speech-to-text</li>
+        <li>Strutture dei pasti elaborate, alimenti, porzioni, stime nutrizionali e timestamp dei pasti</li>
+        <li>Scansioni barcode e dati prodotto usati per il food logging</li>
+        <li>Log del peso e log dell'acqua</li>
+        <li>Foto dei menu che scegli di caricare per l'analisi dei menu dei ristoranti</li>
+        <li>File immagine temporanei dei menu, risultati estratti dall'analisi del menu e valori limitati di contesto legati ai tuoi obiettivi per ordinare i piatti rispetto ai tuoi target</li>
+      </ul>
+      <p>Se includi dati personali in descrizioni testuali dei pasti, input vocali o immagini caricate, tratteremo tali contenuti perché sei stato tu a inviarli.</p>
+
+      <h3>3.4 Registri di Conformità, Consenso e Amministrazione</h3>
+      <p>Possiamo raccogliere o generare registrazioni quali:</p>
+      <ul>
+        <li>Le versioni correnti o storiche dei Termini e della Privacy Policy che hai accettato</li>
+        <li>Timestamp e fonte dei flussi di accettazione legale o di compliance review</li>
+        <li>Lo stato del consenso marketing e i timestamp di aggiornamento delle preferenze marketing</li>
+        <li>Registri di supporto, cancellazione account, accesso ai dati, portabilità ed export</li>
+        <li>Metadati temporanei dei file export e registri audit limitati relativi a tali richieste</li>
+      </ul>
+
+      <h3>3.5 Dati di Dispositivo, Utilizzo e Diagnostica</h3>
+      <p>Possiamo raccogliere dati tecnici e di utilizzo, quali:</p>
+      <ul>
+        <li>Tipo di dispositivo, sistema operativo, versione dell'app, lingua/locale e identificativi tecnici</li>
+        <li>Visualizzazioni schermate, eventi di interazione e dati analytics pseudonimizzati</li>
+        <li>Log di errore, breadcrumb, dati di crash, tracce prestazionali e metadati di debug</li>
+        <li>User ID associato ad analytics o diagnostica quando necessario per troubleshooting</li>
+      </ul>
+      <p>Attualmente non abilitiamo in Sentry la cattura automatica di screenshot o della view hierarchy.</p>
+
+      <h3>3.6 Permessi e Dati Locali del Dispositivo</h3>
+      <p>A seconda delle funzionalità che utilizzi, l'App può richiedere accesso a:</p>
+      <ul>
+        <li>Microfono e riconoscimento vocale</li>
+        <li>Fotocamera e libreria foto</li>
+        <li>Notifiche</li>
+      </ul>
+      <p>L'App può inoltre memorizzare localmente sul tuo dispositivo alcune impostazioni, come preferenze lingua, pianificazioni dei promemoria e bozze temporanee.</p>
+
+      <h2>4. Basi Giuridiche del Trattamento</h2>
+      <table>
+        <tr>
+          <th>Finalità</th>
+          <th>Esempi</th>
+          <th>Base giuridica</th>
+        </tr>
+        <tr>
+          <td>Creazione account, autenticazione e funzionalità core dell'app</td>
+          <td>login, meal logging, barcode lookup, menu analysis, progress tracking, obiettivi, peso e acqua</td>
+          <td>Esecuzione di un contratto</td>
+        </tr>
+        <tr>
+          <td>Funzionalità opzionali che scegli attivamente di usare</td>
+          <td>input vocale, accesso a fotocamera o foto, promemoria, upload foto menu</td>
+          <td>Tua richiesta di usare la funzionalità e, ove richiesto, tuo consenso</td>
+        </tr>
+        <tr>
+          <td>Sicurezza, prevenzione frodi, prevenzione abusi, rate limiting, debugging, diagnostica e affidabilità del servizio</td>
+          <td>crash reporting, enforcement dei limiti, indagine su abusi</td>
+          <td>Legittimo interesse</td>
+        </tr>
+        <tr>
+          <td>Conformità e registrazioni amministrative</td>
+          <td>registrazione delle versioni legali accettate, gestione delle richieste sui diritti, log delle richieste di export</td>
+          <td>Obbligo legale o legittimo interesse, a seconda del contesto</td>
+        </tr>
+        <tr>
+          <td>Comunicazioni marketing</td>
+          <td>email informative o promozionali, se abilitate</td>
+          <td>Consenso</td>
+        </tr>
+      </table>
+      <p>A seconda della legge applicabile, alcuni dati di profilo, nutrizione o stile di vita potrebbero essere considerati dati relativi alla salute o comunque sensibili. Sei tu a scegliere se fornirli. Se lo fai, li trattiamo per fornirti il Servizio richiesto e, ove richiesto dalla legge, sulla base del tuo consenso o delle tue istruzioni.</p>
+
+      <h2>5. Come Utilizziamo le Tue Informazioni</h2>
+      <p>Usiamo le tue informazioni per:</p>
+      <ul>
+        <li>Creare e gestire il tuo account</li>
+        <li>Autenticarti e mantenere sessioni sicure</li>
+        <li>Registrare pasti e generare stime nutrizionali</li>
+        <li>Analizzare menu di ristoranti a partire da immagini caricate</li>
+        <li>Cercare prodotti tramite barcode attraverso database interni e di terze parti</li>
+        <li>Calcolare e mostrare obiettivi, progressi, trend, grafici e riepiloghi</li>
+        <li>Supportare tracciamento peso, tracciamento acqua e promemoria</li>
+        <li>Operare, proteggere, correggere, monitorare e migliorare il Servizio</li>
+        <li>Prevenire abusi, applicare limiti d'uso e indagare su utilizzi impropri</li>
+        <li>Registrare stato di accettazione legale e cambi delle preferenze marketing</li>
+        <li>Rispondere a richieste di supporto e richieste esercizio diritti</li>
+        <li>Fornire una copia o esportazione dei tuoi dati quando richiesto o ragionevolmente opportuno</li>
+        <li>Inviare comunicazioni marketing solo se hai espresso opt-in</li>
+      </ul>
+      <p>Non vendiamo i tuoi dati personali.</p>
+
+      <h2>6. Provider di Terze Parti e Condivisione dei Dati</h2>
+      <p>Condividiamo dati solo nella misura necessaria a far funzionare il Servizio, rispettare la legge, proteggere diritti, prevenire abusi o seguire le tue istruzioni.</p>
+
+      <h3>Supabase (UE)</h3>
+      <p>Usato per:</p>
+      <ul>
+        <li>Database</li>
+        <li>Autenticazione</li>
+        <li>Edge Functions</li>
+        <li>Storage relativo al funzionamento dell'app, inclusi eventuali upload temporanei di immagini menu</li>
+        <li>Storage temporaneo dei file export e relativo trattamento operativo</li>
+      </ul>
+      <p>I dati possono includere informazioni account, dati profilo, pasti, obiettivi, log del peso, log dell'acqua, registri di accettazione legale, registri delle richieste export e altri dati dell'app correlati.</p>
+
+      <h3>OpenAI (Stati Uniti)</h3>
+      <p>Usato per:</p>
+      <ul>
+        <li>Parsing dei pasti basato su AI</li>
+        <li>Fallback per stima nutrizionale</li>
+        <li>Analisi delle immagini dei menu dei ristoranti</li>
+      </ul>
+      <p>I dati inviati possono includere:</p>
+      <ul>
+        <li>Testo del pasto e trascrizioni modificate</li>
+        <li>Immagini del menu</li>
+        <li>Lingua</li>
+        <li>Valori limitati di contesto legati agli obiettivi necessari per l'analisi o il ranking</li>
+      </ul>
+      <p>Non inviamo intenzionalmente a OpenAI identificativi diretti dell'account, come l'indirizzo email, salvo il caso in cui tu li inserisca nei contenuti inviati.</p>
+
+      <h3>PostHog (UE)</h3>
+      <p>Usato per:</p>
+      <ul>
+        <li>Product analytics</li>
+        <li>Event tracking</li>
+        <li>Screen tracking</li>
+      </ul>
+      <p>I dati possono includere eventi d'uso pseudonimizzati, metadati di dispositivo o app e user ID.</p>
+
+      <h3>Sentry (Stati Uniti)</h3>
+      <p>Usato per:</p>
+      <ul>
+        <li>Monitoraggio errori</li>
+        <li>Crash reporting</li>
+        <li>Diagnostica prestazionale</li>
+      </ul>
+      <p>I dati possono includere metadati di dispositivo o app, tracce di errore, breadcrumb, dati prestazionali e user ID. Attualmente non abilitiamo in Sentry la cattura automatica di screenshot o della view hierarchy.</p>
+
+      <h3>Expo, EAS e Provider di Piattaforma</h3>
+      <p>Usati per:</p>
+      <ul>
+        <li>Distribuzione dell'app e aggiornamenti over-the-air</li>
+        <li>Flussi di autenticazione e redirect browser</li>
+        <li>Servizi di piattaforma necessari al funzionamento dell'app</li>
+        <li>Permessi notifiche e relativi servizi di piattaforma, ove applicabili</li>
+      </ul>
+      <p>A seconda della tua piattaforma e del tuo dispositivo, Apple, Google, Expo o altri provider di OS o piattaforma possono trattare dati relativi a login, notifiche, riconoscimento vocale o permessi del dispositivo secondo le loro policy. Le pianificazioni dei promemoria possono inoltre essere memorizzate localmente sul tuo dispositivo.</p>
+
+      <h3>Open Food Facts (UE)</h3>
+      <p>Usato per:</p>
+      <ul>
+        <li>Ricerca prodotti tramite barcode</li>
+        <li>Dati nutrizionali dei prodotti</li>
+      </ul>
+      <p>I dati condivisi sono in genere limitati a barcode o informazioni di lookup del prodotto e relativi dati di query.</p>
+
+      <h3>Comunicazioni e Divulgazioni per Obbligo di Legge o Tutela</h3>
+      <p>Possiamo inoltre comunicare informazioni:</p>
+      <ul>
+        <li>Se richiesto da legge, regolamento, ordine del tribunale o richiesta legittima</li>
+        <li>Per proteggere i diritti, la sicurezza o la proprietà degli utenti, del pubblico o del Servizio</li>
+        <li>In relazione a fusione, acquisizione, finanziamento o cessione di asset</li>
+      </ul>
+
+      <h2>7. Trasferimenti Internazionali di Dati</h2>
+      <p>Alcuni provider che utilizziamo si trovano al di fuori dello Spazio Economico Europeo, inclusi gli Stati Uniti, oppure possono trattare dati a livello globale in base alla propria infrastruttura.</p>
+      <p>Ove applicabile, facciamo affidamento su misure quali:</p>
+      <ul>
+        <li>Garanzie contrattuali con i provider</li>
+        <li>Minimizzazione dei dati</li>
+        <li>Controlli di accesso e misure di sicurezza</li>
+      </ul>
+      <p>Puoi contattarci per maggiori informazioni sulle garanzie relative ai trattamenti transfrontalieri.</p>
+
+      <h2>8. Conservazione e Sicurezza dei Dati</h2>
+      <p>Adottiamo misure tecniche e organizzative ragionevoli volte a proteggere i dati personali, incluse:</p>
+      <ul>
+        <li>Cifratura in transito</li>
+        <li>Controlli di accesso</li>
+        <li>Row Level Security dove implementata per i dati dell'app</li>
+        <li>Controlli di autenticazione e sessione</li>
+        <li>Minimizzazione dei dati nelle richieste ai provider dove praticabile</li>
+      </ul>
+      <p>Nessun sistema può essere garantito come perfettamente sicuro. Usi il Servizio a tuo rischio e dovresti evitare di inviare dati personali non necessari nel testo dei pasti, nell'input vocale o nelle immagini caricate.</p>
+
+      <h2>9. Conservazione dei Dati</h2>
+      <p>Conserviamo i dati personali per il tempo ragionevolmente necessario alle finalità descritte in questa Privacy Policy, salvo periodi più lunghi richiesti dalla legge o ragionevolmente necessari per sicurezza, gestione delle controversie, prevenzione abusi o conformità.</p>
+      <p>In generale:</p>
+      <ul>
+        <li>Dati account, profilo, pasti, obiettivi, peso e acqua sono conservati finché il tuo account resta attivo</li>
+        <li>Le immagini menu temporanee possono essere conservate brevemente per l'elaborazione e rimosse dopo il trattamento ove tecnicamente possibile</li>
+        <li>I registri di accettazione legale, delle preferenze marketing e delle richieste sui diritti possono essere conservati come registri di conformità o audit per il tempo ragionevolmente necessario</li>
+        <li>I file export temporanei sono destinati a scadere rapidamente e a essere rimossi dopo la scadenza; possiamo mantenere un log limitato delle richieste export come registro audit</li>
+        <li>Log analytics, crash e tecnici possono essere conservati secondo esigenze operative e impostazioni dei provider</li>
+        <li>Se elimini il tuo account, cancelleremo o anonimizeremo i dati applicativi senza ritardo ingiustificato, fatti salvi limitati residui in backup, log o registri legali ove tecnicamente necessari o richiesti dalla legge</li>
+      </ul>
+      <p>Se smetti di usare il Servizio senza eliminare l'account, potremmo conservare i tuoi dati finché non venga richiesta la cancellazione o l'account non venga altrimenti rimosso.</p>
+
+      <h2>10. I Tuoi Diritti</h2>
+      <p>A seconda della tua posizione geografica, potresti avere diritti quali:</p>
+      <ul>
+        <li>Accesso ai tuoi dati personali</li>
+        <li>Rettifica dei dati inaccurati</li>
+        <li>Cancellazione</li>
+        <li>Copia o esportazione dei tuoi dati</li>
+        <li>Portabilità dei dati, ove applicabile</li>
+        <li>Limitazione o opposizione a determinati trattamenti</li>
+        <li>Revoca del consenso quando il trattamento si basa sul consenso</li>
+        <li>Diritto di proporre reclamo a un'autorità di controllo competente</li>
+      </ul>
+      <p>Per esercitare i tuoi diritti, incluse richieste di accesso, copia o export dei dati, portabilità o cancellazione dell'account e dei dati personali, contatta <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a>.</p>
+      <p>Possiamo chiedere informazioni ragionevolmente necessarie per verificare la tua identità prima di trattare la richiesta.</p>
+      <p>A seconda della configurazione del prodotto in quel momento, potremmo soddisfare una richiesta tramite supporto, tramite link temporaneo e sicuro per il download o con altro metodo ragionevole.</p>
+      <p>Puntiamo a rispondere nel più breve tempo ragionevolmente possibile e, ove la legge applicabile lo richieda, entro i termini previsti da tale legge, incluso generalmente entro 30 giorni per richieste riconducibili al GDPR.</p>
+      <p>Se in precedenza hai espresso consenso a comunicazioni marketing, puoi revocarlo tramite i controlli disponibili in-app o contattandoci.</p>
+
+      <h2>11. Restrizioni di Età</h2>
+      <p>Il Servizio non è destinato a minori dell'età minima consentita dalla legge applicabile.</p>
+      <p>Attualmente le età minime previste sono:</p>
+      <ul>
+        <li>Unione Europea: 16+</li>
+        <li>Stati Uniti: 13+</li>
+      </ul>
+      <p>Se ritieni che un minore abbia fornito dati personali in violazione di queste regole, contattaci e valuteremo la situazione e, ove opportuno, rimuoveremo i dati.</p>
+
+      <h2>12. Diritti Privacy California e Simili</h2>
+      <p>Se sei residente in California o godi di diritti simili ai sensi della legge statale applicabile, potresti avere diritti di accesso, cancellazione, rettifica e informazione sulle categorie di dati personali raccolti e comunicati.</p>
+      <p>Non vendiamo dati personali e non discriminiamo consapevolmente gli utenti che esercitano diritti privacy applicabili.</p>
+
+      <h2>13. Disclosure Medica e Relativa all'AI</h2>
+      <p>BiteVoice AI non è un dispositivo medico e non fornisce consulenza medica, nutrizionale, diagnostica o terapeutica.</p>
+      <p>Output generati dall'AI, risultati barcode, analisi menu, promemoria e stime nutrizionali possono essere inaccurati, incompleti, obsoleti o inadatti alla tua situazione specifica.</p>
+      <p>Non fare affidamento sul Servizio per decisioni mediche, di emergenza o critiche per la sicurezza. Consulta professionisti qualificati ove appropriato.</p>
+
+      <h2>14. Modifiche a Questa Policy</h2>
+      <p>Possiamo aggiornare questa Privacy Policy di volta in volta.</p>
+      <p>Le modifiche sostanziali possono essere comunicate in-app, via email oppure aggiornando data di efficacia e versione.</p>
+      <p>L'uso continuato del Servizio dopo l'entrata in vigore della Policy aggiornata costituisce presa d'atto della Policy rivista.</p>
+
+      <h2>15. Contatti</h2>
+      <p>Se hai domande su questa Privacy Policy o sulle nostre pratiche di trattamento, oppure se vuoi inviare una richiesta relativa ad accesso, export, portabilità o cancellazione, contatta:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:cristiantuli@outlook.com">cristiantuli@outlook.com</a></li>
       </ul>
     </section>
 
     <footer>
-      <p><strong>Legal Notice:</strong> This is a draft. It must be reviewed by legal counsel before publication.</p>
+      <p><strong>Legal Notice:</strong> This is a draft. It should be reviewed by legal counsel before publication.</p>
     </footer>
   </main>
 </body>
